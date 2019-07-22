@@ -6,4 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+//sectors resource
+router.use('/sectors', require('./sectors'));
+
 module.exports = router;
